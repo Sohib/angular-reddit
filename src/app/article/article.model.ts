@@ -1,13 +1,11 @@
 export class Article {
     constructor(public title: string, public link: string, public votes: number = 0) {
     }
-    voteUp(): boolean {
+    voteUp() {
         this.votes++;
-        return false;
     }
-    voteDown(): boolean {
+    voteDown() {
         this.votes--;
-        return false;
     }
 
     get domain(): string{
